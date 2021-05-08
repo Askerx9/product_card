@@ -1,0 +1,56 @@
+.slider {
+  position: relative;
+  width: 388px;
+  height: 600px;
+}
+
+.slider__el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  clip-path: ellipse(0% 0% at 50% 120%);
+  transition: clip-path 1.5s ease-out;
+}
+
+.slider__el--active {
+  clip-path: ellipse(400% 200% at 50% 120%);
+}
+
+.slider__el--light .card {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.slider__el--dark .card {
+  background: #838383;
+  color: #ffffff;
+}
+
+.slider__el--dark .button {
+  background: #2B2B2B;
+  color: currentColor;
+}
+
+.slider__el--dark .button .button__clickEffect {
+  background: lightgray;
+}
+
+.slider__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+}
+
+.slider__el .card {
+  width: 100%;
+  min-height: 45%;
+  padding-top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

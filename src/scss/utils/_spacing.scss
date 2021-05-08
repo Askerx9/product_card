@@ -1,0 +1,6 @@
+
+$gap: 8px;
+
+@function space($space) {
+  @return $space * $gap;
+}
