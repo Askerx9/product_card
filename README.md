@@ -14,7 +14,7 @@ use NVM
   nvm use 15
 ```
 
-Run my projetc
+Run my project
 
 ```bash 
     npm install
